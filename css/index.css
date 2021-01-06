@@ -123,21 +123,26 @@ header a{
     background: #fff;
     color: #000;
 }
-.description{
+/*.description{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50% 50%;
     grid-gap: 1em;
-   
+    justify-items:center;
+    border: 1px solid red;
+    position: relative;
+
+  
+}*/
+.description{
+    padding-top: 1em;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
 
 }
-.left_columns{
-    border: 1px solid black;
 
-}
-.right_columns{
-    border: 1px solid black;
-}
 .description p{
     font-family: 'Open Sans', sans-serif;
     text-transform: none;
@@ -147,7 +152,7 @@ header a{
 
 
 img {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
 
@@ -165,4 +170,10 @@ img {
     
     
     
+}
+@media all and (max-width: 420px) {
+    .right_columns, .left_columns {
+    float: none;
+    width: auto;
+    }
 }
