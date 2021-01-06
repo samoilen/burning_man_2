@@ -1,0 +1,158 @@
+
+body{
+    padding: 0;
+    margin:0 ;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size:16px ;
+    
+
+}
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding:0 ;
+    margin: 0;
+    text-transform: uppercase;
+}
+.about h2{
+    font-size:4em;
+    /*margin-bottom: 58px;*/
+}
+.about h3{
+    font-size: 3.2em;
+    /*margin-bottom: 28px;*/
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding-top: 113px;
+}
+p{
+    margin: 0;
+}
+ul,li{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    
+}
+
+.header{
+    justify-content: center;
+    background:url(../img/header-bg.jpg) no-repeat center top/cover;
+    padding-bottom: 322px;
+    color: #fff;
+    padding-top: 57px;
+    
+    
+}
+header a{
+    color: #fff;
+}
+.logo{
+    margin-right: 69px;
+    
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+.menu li a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+
+.tel{
+    font-size: 17px;
+    margin-left: auto;
+    letter-spacing: 0.1em;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+.offer {
+    text-transform: uppercase;
+    margin-top: 216px;
+
+}
+.offer p{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+
+}
+.offer h1 {
+    font-size: 100px;
+    margin-bottom: 19px;
+    margin-top: -9px;
+    letter-spacing: 0.02em;
+
+}
+.btn{
+    box-sizing: border-box;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border: 1px solid #fff;
+    width: 238px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.btn:hover{
+    background: #fff;
+    color: #000;
+}
+.description{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 65% 35%;
+    grid-gap: 1em;
+    background-color: #f48;
+
+}
+.description p{
+    font-style: normal;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about{
+    margin-top: 20px;
+}
+#footer{
+    margin-top: 20px;
+    
+    padding-top:  20px;
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+
+    padding: 114px;
+    
+    
+    
+}
