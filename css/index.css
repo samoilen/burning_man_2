@@ -142,6 +142,9 @@ header a{
     grid-column-gap: 1em;
 
 }
+.columns{
+    
+}
 
 .description p{
     font-family: 'Open Sans', sans-serif;
