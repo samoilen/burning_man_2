@@ -5,8 +5,6 @@ body{
     font-family: 'Anton', sans-serif;
     color: black;
     font-size:16px ;
-    
-
 }
 * {
     box-sizing: border-box;
@@ -16,20 +14,22 @@ h1,h2,h3,h4,h5,h6{
     padding:0 ;
     margin: 0;
     text-transform: uppercase;
+    
 }
 .about h2{
+    margin-top: 0.6em;
     font-size:4em;
-    /*margin-bottom: 58px;*/
 }
 .about h3{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     font-size: 3.2em;
-    /*margin-bottom: 28px;*/
 }
 a{
     text-decoration: none;
 }
 section{
-    padding-top: 113px;
+    padding-top: 7em;
 }
 p{
     margin: 0;
@@ -38,12 +38,6 @@ ul,li{
     display: block;
     padding: 0px;
     margin: 0px;
-}
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px 15px;
-    
 }
 
 .header{
@@ -123,40 +117,40 @@ header a{
     background: #fff;
     color: #000;
 }
-/*.description{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    grid-gap: 1em;
-    justify-items:center;
-    border: 1px solid red;
-    position: relative;
+.container{
+    border: 1px solid green;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    align-items: stretch;
+}
 
-  
-}*/
 .description{
     padding-top: 1em;
-    text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    align-items: end;
+}
 
+
+.column{
+    border: 1px solid black;
 }
-.columns{
-    
-}
+
 
 .description p{
     font-family: 'Open Sans', sans-serif;
     text-transform: none;
     font-size: 1.2em;
     line-height: normal;
+   
 }
-
-
-img {
-    max-width: auto;
+.columns img{
+    max-width: 100%;
     height: auto;
+    overflow: none;
 }
 
 .about{
@@ -164,15 +158,10 @@ img {
 }
 #footer{
     margin-top: 20px;
-    
     padding-top:  20px;
     font-size: 14px;
     font-family: 'Open Sans',sans-serif;
-
     padding: 114px;
-    
-    
-    
 }
 @media all and (max-width: 420px) {
     .right_columns, .left_columns {
