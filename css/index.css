@@ -28,11 +28,9 @@ h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
-section{
-    padding-top: 7em;
-}
+
 p{
-    margin: 0;
+    margin: 0 auto;
 }
 ul,li{
     display: block;
@@ -118,39 +116,42 @@ header a{
     color: #000;
 }
 .container{
-    border: 1px solid green;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0px 15px;
     align-items: stretch;
 }
-
-.description{
-    padding-top: 1em;
+@media all and (min-width: 768px) {
+  .description{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
     grid-gap: 1em;
-    align-items: end;
+    align-items: grid;
+ 
+
+}
 }
 
 
-.column{
-    border: 1px solid black;
+.text_in_column p {
+    align-items: stretch;
+    padding: 1em;
+    grid-auto-rows: minmax(100px, auto);
 }
-
 
 .description p{
     font-family: 'Open Sans', sans-serif;
     text-transform: none;
     font-size: 1.2em;
     line-height: normal;
-   
 }
-.columns img{
+.column img{
     max-width: 100%;
     height: auto;
     overflow: none;
+    object-fit: cover;
+    object-position:top;
+   
 }
 
 .about{
@@ -162,10 +163,4 @@ header a{
     font-size: 14px;
     font-family: 'Open Sans',sans-serif;
     padding: 114px;
-}
-@media all and (max-width: 420px) {
-    .right_columns, .left_columns {
-    float: none;
-    width: auto;
-    }
 }
